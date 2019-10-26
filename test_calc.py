@@ -9,7 +9,7 @@ class TestCalc(unittest.TestCase):
         # fringe cases
         self.assertEqual(calc.add(-1, 1), 0)
         self.assertEqual(calc.add(-1, -1), -2)
-         
+
     def test_subtract(self):
         self.assertEqual(calc.subtract(10, 5), 5)
         # fringe cases
@@ -30,6 +30,7 @@ class TestCalc(unittest.TestCase):
 
         with self.assertRaises(ValueError):
             calc.divide(10, 0)
+
 
 if __name__ == '__main__':
     unittest.main()
